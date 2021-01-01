@@ -1,0 +1,58 @@
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color:#eee;
+}
+
+
+.contents {
+    background-color: #fff;
+}
+
+.alert a{
+    text-decoration: underline;
+}
+
+main {
+    background-image: url(../684551_m.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+}
+
+
+.card {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #eee;
+}
+
+.day1-prev {
+    color: #eee;
+    pointer-events: none;
+}
+
+.day-img {
+    max-width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.day-container {
+    text-align: center;
+}
+
+.sentence {
+    font-size: 20px;
+}
+
+.strong {
+    font-size: 32px;
+    color: red;
+}
