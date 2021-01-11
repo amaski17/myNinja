@@ -50,6 +50,7 @@
         if (cnt > 3) {
             fortune.textContent = '引きすぎです。';
             fortune.style.color = "black";
+            fortune.style.fontSize = "36px";
         }
     });
 }
