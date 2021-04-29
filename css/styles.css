@@ -28,6 +28,11 @@ main {
     margin-bottom: 10px;
 }
 
+.card-text {
+    text-align: left;
+    padding: 0%;
+}
+
 footer {
     background-color: #eee;
 }
@@ -38,7 +43,7 @@ footer {
 }
 
 .day-img {
-    max-width: 60%;
+    max-width: 75%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -60,3 +65,10 @@ footer {
     font-size: 32px;
     color: red;
 }
+
+p {
+    text-align: left;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
