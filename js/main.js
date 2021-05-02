@@ -8,6 +8,18 @@
     const mask = document.getElementById('mask');
     let cnt = 0;
 
+    function omikujiResult(text, color, img) {
+        fortune.textContent = text;
+        fortune.style.color = color;
+        document.body.style.backgroundImage = 'url(../img/'+img+')';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundAttachment = 'fixed';
+        if (text == '引きすぎです。'){
+            fortune.style.fontSize = "36px";
+        }
+
+        return 0;
+      }
 
     close.addEventListener('click', ()=> {
         modal.classList.add('hidden');
@@ -25,32 +37,23 @@
         mask.classList.remove('hidden');
         const n = Math.random();
         if (n < 0.05) {
-            fortune.textContent = '大吉';
-            fortune.style.color = "red";
+            omikujiResult('大吉', 'red', 'gold.jpg')
         } else if (n < 0.2) {
-            fortune.textContent = '吉';
-            fortune.style.color = "#FF4F50";
+            omikujiResult('吉', '#FF4F50', 'rainbow.jpg')
         } else if (n < 0.4) {
-            fortune.textContent = '中吉';
-            fortune.style.color = "orange";
+            omikujiResult('中吉', 'orange', 'clover.jpg')
         } else if (n < 0.7) {
-            fortune.textContent = '小吉';
-            fortune.style.color = "green";
+            omikujiResult('小吉', 'green', 'plant.jpg')
         } else if (n < 0.9) {
-            fortune.textContent = '末吉';
-            fortune.style.color = "#32CD32";
+            omikujiResult('末吉', '#32CD32', 'cliff.jpg')
         } else if (n < 0.97) {
-            fortune.textContent = '凶';
-            fortune.style.color = "#0000FF";
+            omikujiResult('凶', '#0000FF', 'cloudy.jpg')
         } else {
-            fortune.textContent = '大凶';
-            fortune.style.color = "#0000AA";
+            omikujiResult('大凶', '#0000AA', 'storm.jpg')
         }
         cnt++;
         if (cnt > 3) {
-            fortune.textContent = '引きすぎです。';
-            fortune.style.color = "black";
-            fortune.style.fontSize = "36px";
+            omikujiResult('引きすぎです。', 'black', 'forest.jpg')
         }
     });
 }
